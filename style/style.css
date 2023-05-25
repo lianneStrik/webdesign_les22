@@ -1,0 +1,29 @@
+.content{
+    width: 80%;
+    margin: 20px auto;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: grey;
+    height: 200px;
+    text-align: center;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+img{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .content {
+        width:100%!important;
+    }
+}

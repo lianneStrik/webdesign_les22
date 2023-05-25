@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Opdracht voor NHA met een responsive design.">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="overmij.html">Over Mij</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="content">
+
+    <p>Mijn naam is Lianne Strik - van Hout, 31 jaar en ik woon in Boekel. Ik ben getrouwd en heb 2 kinderen.
+        Hieronder laat ik wat afbeeldingen zien over mijn hobbies:
+    </p>
+    <div class="gallery">
+        <div class="row">
+            <div class="col-sm">
+                <img src="img/3dprint_1.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/3dprint_2.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/stickers.jpg" alt="image"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="img/catan_1.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/catan_2.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/home_assistant.jpg" alt="image"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="img/3dprint_1.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/3dprint_2.jpg" alt="image"/>
+            </div>
+            <div class="col-sm">
+                <img src="img/stickers.jpg" alt="image"/>
+            </div>
+        </div>
+    </div>
+    <footer>© Lianne Strik <span id="year"></span></footer>
+</div>
+</body>
+</html>
+<script type="application/javascript">
+    let year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
+</script>
